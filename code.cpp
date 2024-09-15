@@ -115,8 +115,5 @@ int main() {
     cout << "Result state:" << endl;
     printPuzzle(resultState);
 
-    int resultCost = manhattanDistance(resultState, goalState);
-    cout << "Manhattan distance: " << resultCost << endl;
-
     return 0;
 }
