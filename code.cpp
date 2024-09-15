@@ -22,7 +22,7 @@ int manhattanDistance(vector<vector<int>>& state, vector<vector<int>>& goal) {
     return distance;
 }
 
-// Get the possible neighboring states
+//possible neighboring states
 vector<vector<vector<int>>> getNeighbors(vector<vector<int>>& state) {
     vector<vector<vector<int>>> neighbors;
     int x, y;
@@ -38,7 +38,6 @@ vector<vector<vector<int>>> getNeighbors(vector<vector<int>>& state) {
         }
     }
     
-    // Possible moves: up, down, left, right
     vector<pair<int, int>> moves = {{x-1, y}, {x+1, y}, {x, y-1}, {x, y+1}};
     
     for (auto& move : moves) {
