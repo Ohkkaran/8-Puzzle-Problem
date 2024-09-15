@@ -5,15 +5,13 @@ The puzzle begins with an initial state where the tiles are arranged randomly.
 We will be using Hill climbing algorithm to solve the above problem. Let's have a look at what is this algorithm and how does it work.
 The Hill Climbing algorithm is a heuristic search algorithm used in optimization problems. It belongs to the family of local search algorithms, which aim to find solutions by making incremental changes to a single solution (state) and evaluating its quality based on some heuristic function. The main idea of Hill Climbing is to start with an arbitrary solution and iteratively make moves towards better neighboring solutions until a local optimum is reached.
 Eg: 
-Intial State                Final State
-1 2 3                        1 2 3
-0 4 6                        4 5 6
-7 5 8                        7 8 0
-
+Intial State [[1 2 3],[0 4 6],[7 5 8]]
+Final State  [[1 2 3],[4 5 6],[7 8 0]]
+                      
 we will be calculating heuristic value for each state and move to the next step if new heuristic value is smaller than the existing one.
 Like here heuristic value for current state is 3.It will explore all the possiblities and move to the better path. So it will move to next state having heuristic value <3 like 2 for this next move  
-1 2 3
-4 0 6
-7 5 8
+[[1 2 3],[4 0 6],[7 5 8]]
+
+
 
                                     
